@@ -20,11 +20,11 @@
 
         </li>
         <li class="list-group-item">
-            Company : {{githubProfile.company}}
+            Company : <a [href]="githubProfile.company" target="_blank">{{githubProfile.company}}</a>
 
         </li>
         <li class="list-group-item">
-            Blog : {{githubProfile.blog}}
+            Blog : <a [href]="githubProfile.blog" target="_blank">{{githubProfile.blog}}</a>
 
         </li>
         <li class="list-group-item">
@@ -32,7 +32,7 @@
 
         </li>
         <li class="list-group-item">
-            Profile URL: {{githubProfile.html_url}}
+            Profile URL: <a [href]="githubProfile.html_url" target="_blank">{{githubProfile.html_url}}</a>
 
         </li>
     </ul>
