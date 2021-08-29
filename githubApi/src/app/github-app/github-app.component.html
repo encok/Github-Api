@@ -21,7 +21,12 @@
        </div>
        <div class="row">
            <div class="col">
-               {{githubProfile}}
+          <app-github-profile [githubProfile]="githubProfile"></app-github-profile>
+           </div>
+       </div>
+       <div class="row">
+           <div class="col">
+            <app-github-repos></app-github-repos> 
            </div>
        </div>
    </div>
