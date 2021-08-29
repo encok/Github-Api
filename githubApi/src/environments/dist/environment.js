@@ -6,7 +6,7 @@ exports.__esModule = true;
 exports.environment = void 0;
 exports.environment = {
     production: false,
-    Token: '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'
+    Token: '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'
 };
 /*
  * For easier debugging in development mode, you can import the following file

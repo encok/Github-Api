@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  Token:'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'
+  Token:'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'
 };
 
 /*
