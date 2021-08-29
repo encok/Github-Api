@@ -1,13 +1,13 @@
-<div class="card mt-3">
+<div *ngIf="githubRepos" class="card mt-3">
     <div class="car-header bg-light text-black">
       <h4 class="text-center">Github Repositories</h4>
     </div>
     <div class="card-body">
         <ul class="list-group">
-            <li class="list-group-item d-flex justify-content-between">
-                    <a href="/" class="text-primary" target="_blank">name</a>
-                    <span class="btn btn-success">Stars</span>
-                    <span class="btn btn-warning">Stars</span>
+            <li *ngFor="let repo of githubRepos" class="list-group-item d-flex justify-content-between">
+                    <a [href]="repo.html_url" class="text-primary" target="_blank">{{repo.name}}</a>
+                    <span class="btn btn-success">{{repo.stargazers_count}}Stars</span>
+                    <span class="btn btn-warning">{{repo.watchers_count}}Stars</span>
             </li> 
 
         </ul>
